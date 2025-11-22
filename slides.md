@@ -16,13 +16,41 @@ body {
   margin: 0;
 }
 
-.logo-global {
-  position: fixed ;
+section::before {
+  content: "";
+  position: fixed;
   top: 50px;
   left: 50px;
   width: 200px;
-  z-index: 999999 ;
+  height: 70px;
+  background-image: url('./assets/img/logo-if.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top;
+  z-index: 999999;
   pointer-events: none;
+}
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+}
+
+section h1 {
+  color: #014d1e;
+}
+
+section.capa h1 {
+  color: #fff !important;
+}
+
+section.agradecimento h1 {
+  color: #fff !important;
+}
+
+ul li,
+ol li {
+  color: #014d1e !important;
+  font-weight: 600;
 }
 
 section:first-of-type .marp-footer {
@@ -40,14 +68,12 @@ section:first-of-type .marp-footer {
 }
 
 .capa h1 {
-  font-family: "Playfair Display", serif;
   font-size: 2.2rem;
   margin-top: 2rem;
   text-align: center;
 }
 
 .capa h2 {
-  font-family: "Playfair Display", serif;
   font-size: 1.3rem;
   margin: 0.3rem 0 1rem;
   text-align: center;
@@ -66,26 +92,13 @@ section:first-of-type .marp-footer {
   text-align: right;
   font-size: 0.80rem;
 }
-.agradecimento {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  font-family: "Playfair Display", serif;
-}
-</style>
 
-<img class="logo-global" src="./assets/img/logo-if.png" alt="Logo IF">
+</style>
 
 <section class="capa">
   <h1>TÍTULO DO TRABALHO</h1>
   <h2>Subtítulo Opcional</h2>
-
   <p class="nome">Mariana Alice Pires Leite</p>
-
   <p class="disciplina">
     Disciplina: Nome da Disciplina<br>
     Professor(a): Nome do Professor
@@ -98,38 +111,31 @@ section:first-of-type .marp-footer {
 - Tópico 1
 - Tópico 2
 - Tópico 3
-<img class="logo-global" src="./assets/img/logo-if.png" alt="Logo IF">
 
 ---
 
 # Slide 1: Introdução
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<img class="logo-global" src="./assets/img/logo-if.png" alt="Logo IF">
 
 ---
 
 # Slide 2: Objetivos
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-<img class="logo-global" src="./assets/img/logo-if.png" alt="Logo IF">
 
 ---
 
 # Slide 3: Metodologia
 Duis aute irure dolor in reprehenderit.
-<img class="logo-global" src="./assets/img/logo-if.png" alt="Logo IF">
 
 ---
 
 # Slide 4: Resultados
 Excepteur sint occaecat cupidatat non proident.
-<img class="logo-global" src="./assets/img/logo-if.png" alt="Logo IF">
 
 ---
 
-<section class="agradecimento">
-  Muito obrigada!
+# Muito obrigada!
 </section>
-<img class="logo-global" src="./assets/img/logo-if.png" alt="Logo IF">
 
 ---
 
@@ -137,4 +143,3 @@ Excepteur sint occaecat cupidatat non proident.
 1. Lorem ipsum  
 2. Dolor sit amet  
 3. Sed do eiusmod  
-<img class="logo-global" src="./assets/img/logo-if.png" alt="Logo IF">
